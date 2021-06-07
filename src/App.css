@@ -28,7 +28,12 @@ body{
   background-color: #466d77;
   border-radius: 10px;
 }
-
+.searchBox:hover{
+  border: 2px solid rgb(76, 147, 230);
+}
+.searchBox:focus{
+  border: 2px solid rgb(76, 147, 230);
+}
 .searchBox input{
   background-color: #466d77;
   padding: 5px;
@@ -50,6 +55,7 @@ body{
   color: rgb(169, 216, 216);
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .searchBox button:hover{
   color: rgb(153, 172, 187);

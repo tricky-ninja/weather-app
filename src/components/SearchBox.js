@@ -50,7 +50,7 @@ function SearchBox({
                         console.log(data);
                         setTemp(data.main.temp);
                         setFeelsLike(data.main.feels_like);
-                        setPlace(city);
+                        setPlace(data.name);
                         setCountry(lookup.byIso(data.sys.country).country);
                         setRegion(lookup.byIso(data.sys.country).region);
                         setHumidity(data.main.humidity)
