@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import {useState} from 'react';
+import weather from 'openweather-apis';
+import {API_KEY} from './config'
 import './App.css';
+import Weather from './components/Weather';
 
 function App() {
+
+  weather.setLang('en');
+  weather.setAPPID(API_KEY);
+
+  const [city, setCity] = useState('')
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Weather setCity={setCity} weather={weather} city={city} />
     </div>
   );
 }
