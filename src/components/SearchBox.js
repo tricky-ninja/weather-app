@@ -1,5 +1,6 @@
 import React from 'react';
 import lookup from 'country-code-lookup';
+import { FaSearch } from "react-icons/fa";
 
 function SearchBox({
     setCity,
@@ -29,10 +30,11 @@ function SearchBox({
                 setCity(event.target.value)
             }} 
             value={city}
-            type="text" />
+            type="text" placeholder='Search a city' />
             <button onClick={() => {
                 if (!city) return
                 weather.setCity(city);
+                weather.setUnits('metric');
                 weather.getAllWeather((err, data) => {
                     if (err) {
                         alert(err);
@@ -65,7 +67,7 @@ function SearchBox({
                 });
             }}
             style={{margin: '5px'}}
-            >Check</button>
+            ><FaSearch className='searchIcon' /></button>
         </div>
     )
 }

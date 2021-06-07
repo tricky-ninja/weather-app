@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 *{
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(80deg, #255c64, #2e6c75 ,#548b94);
 }
 
 .weather-box{
@@ -10,4 +15,42 @@
 .weather-box h4{
   padding: 0;
   margin: 5px;
+}
+.data{
+  margin-top: 5vh;  
+}
+.data h4{
+  margin-top: 5vh;
+  color: rgb(182, 236, 211);
+}
+
+.searchBox{
+  background-color: #466d77;
+  border-radius: 10px;
+}
+
+.searchBox input{
+  background-color: #466d77;
+  padding: 5px;
+  height: 5vh;
+  width: 25vw;
+  outline: none;
+  border: none;
+  font-size: large;
+  color: rgb(169, 216, 216);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(115, 165, 161);
+  opacity: 1; /* Firefox */
+}
+
+.searchBox button{
+  background: none;
+  color: rgb(169, 216, 216);
+  border: none;
+  outline: none;
+}
+.searchBox button:hover{
+  color: rgb(153, 172, 187);
 }

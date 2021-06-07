@@ -33,13 +33,13 @@ function Weather({
             />
             <div className="data">
                 <h4>{place ? 'City: ' + place : ''}</h4>
-                <h4>{country ? 'Country : ' + country : ''}</h4> 
-                <h4>{region ? 'Region : ' + region : ''}</h4> 
+                <h4>{country ? 'Country: ' + country : ''}</h4> 
+                <h4>{region ? 'Region: ' + region : ''}</h4> 
                 <h4>{time ? 'Time: ' + time : ''}</h4>
                 <h4>{description ? 'Weather: ' + description : ''}</h4>
-                <h4>{temp ? 'Temprature: ' + temp : ''}</h4> 
-                <h4>{feelsLike ? 'Feels like: ' + feelsLike : ''}</h4>
-                <h4>{humidity ? 'Humidity: ' + humidity : ''}</h4>
+                <h4>{temp ? 'Temprature: ' + temp + '°C' : ''}</h4> 
+                <h4>{feelsLike ? 'Feels like: ' + feelsLike + '°C' : ''}</h4>
+                <h4>{humidity ? 'Humidity: ' + humidity + '%': ''}</h4>
             </div>
         </div>
     )
